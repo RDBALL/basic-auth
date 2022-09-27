@@ -8,7 +8,6 @@ router.post('/signin', authentication, async (request, response) => {
   try {
     response.status(200).send(request.body);
   } catch (err) {
-    console.log(err);
     response.status(403).send('Error logging in');
   }
 });
